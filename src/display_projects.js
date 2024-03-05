@@ -1,5 +1,8 @@
+import { display_all_todos } from "./display_todos";
+
 function display_all_projects (input_dashboard) {
   const container = document.querySelector(".project_list");
+  container.innerHTML = "";
   const temp_dashboard = input_dashboard.project_list;
   for (let i = 0; i < temp_dashboard.length; i++) {
     const temp_project = temp_dashboard[i];
@@ -11,7 +14,7 @@ function display_all_projects (input_dashboard) {
     list_btn.textContent = "View";
     list_btn.classList.add("project_view");
     list_btn.addEventListener("click", () => {
-      console.log(temp_project.id);
+      view_project(temp_project);
     });
 
     const list_p = document.createElement("p");
@@ -23,5 +26,9 @@ function display_all_projects (input_dashboard) {
     container.appendChild(list_li);
   }
 };
+
+function view_project (proj) {
+  display_all_todos(proj);
+}
 
 export {display_all_projects} 
