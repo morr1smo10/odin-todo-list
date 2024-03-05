@@ -1,0 +1,21 @@
+import { todo } from './todo';
+import { project } from './project';
+
+class dashboard {
+  constructor () {
+    this.project_list = [
+    new project (0, "Default Project 1", 
+    [new todo (0, "Default_todo_1", "the first todo of default", 2024, 4, 1, 1),
+    new todo (1, "Default_todo_2", "the second todo of default", 2024, 4, 2, 2),
+    new todo (2, "Default_todo_3", "the third todo of default", 2024, 4, 3, 3),
+    new todo (3, "Default_todo_4", "the fourth todo of default", 2024, 4, 4, 4),
+    new todo (4, "Default_todo_5", "the fifth todo of default", 2024, 4, 5, 5)])
+    ];
+  };
+
+  create_project (project) {
+    this.project_list.push(project);
+  }
+}
+
+export {dashboard};

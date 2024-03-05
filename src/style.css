@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(204, 252, 131);
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.project_container {
+  width: 20%;
+  background-color: aqua;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.todo_container {
+  width: 80%;
+  background-color: bisque;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.project {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.project button {
+  height: 40px;
+  width: 85px;
+  margin-left: 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.project p {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.todo {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 1fr 1fr;
+  align-items: center;
+  column-gap: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.todo button {
+  height: 35px;
+  width: 75px;
+  margin-left: 15px;
+  background-color: bisque;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.todo p {
+  margin-left: 15px;
+  font-size: 20px;
+}
